@@ -1,0 +1,154 @@
+.container-section {
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url(../images/model-3.jpg); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+
+.title-models {
+  padding-top: 10vh;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.order {
+  font-size: 0.9rem;
+  line-height: 0.2;
+  font-weight: 500;
+}
+.under-sect {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.btn-section {
+  display: flex;
+  flex-direction: row;
+  width: 35vw;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.btn-left {
+  height: 45px;
+  width: 250px;
+  border-radius: 2rem;
+  background-color: #16191e;
+  opacity: 0.8;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 30px; 
+
+}
+.btn-right {
+  height: 45px;
+  width: 250px;
+  border-radius: 2rem;
+  background-color: #ececeb;
+  opacity: 0.6;
+  color: #16191e;
+  cursor: pointer;
+}
+
+.btn-left,
+.btn-right > P {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.downArrow {
+  height: 40px;
+  width: 45px;
+  animation: animate__fadeInDown infinite;
+  animation-duration: 2s;
+  margin: 0 auto;
+}
+
+
+@media only screen and (max-width:1024px) {
+  .btn-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+margin-right: 5.5rem;
+  }
+  .title-models {
+    margin: 0 auto;
+    width: 85%;
+    font-size: 2.5rem;
+  }
+  .btn-left {
+    width: 300px;  
+  }
+  .btn-right {
+    width: 300px;
+
+  }
+
+}
+
+@media only screen and (min-width:768px) {
+
+  .btn-left,
+.btn-right > P {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.btn-left {
+  height: fit-content;
+  width: 300px;
+  margin-bottom: 8px;
+
+
+}
+.btn-right {
+  height: fit-content;
+  width: 300px;
+
+}
+}
+
+@media screen and (max-width: 480px) {
+  .title-models {
+    margin: 0 auto;
+    width: 85%;
+    font-size: 1.5rem;
+  }
+  .btn-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+margin: 0 4.5rem 0 0 ;  }
+  .btn-left {
+    height: fit-content;
+    width: 200px;
+    margin-bottom: 8px !important;
+  }
+  .btn-right {
+    height: fit-content;
+    width: 200px;
+  }
+  
+.btn-left,
+.btn-right > P {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.downArrow {
+  height: 30px;
+  width: 35px;
+  animation: animate__fadeInDown infinite;
+  animation-duration: 2s;
+  margin: 0 auto;
+}
+}
